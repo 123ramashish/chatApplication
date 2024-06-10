@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.3.0",
+    "nodemon": "^3.1.0",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "web_technology",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ChatApplicatiion using socket programming",
+  "main": "server.js",
+  "author": "Ram Ashish",
+  "license": "ISC"
+}

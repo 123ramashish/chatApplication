@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chat-app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <section class="msger col-md-9 chatBox mt-3 mt-md-0">
+          <header class="msger-header">
+            <div
+              class="msger-header-title d-flex align-items-center justify-content-center"
+            >
+              <div id="greenOnlineDot" class="mx-1"></div>
+              <span style="color: #5a9c1a" id="userNameSpan"></span>
+              <div id="typing" class="mx-3"></div>
+            </div>
+            <div class="msger-header-options"></div>
+          </header>
+
+          <main class="msger-chat">
+            <!-- Messages will be appended here -->
+          </main>
+
+          <form class="msger-inputarea">
+            <input
+              id="myInput"
+              type="text"
+              class="msger-input"
+              placeholder="Enter your message..."
+            />
+            <button type="submit" class="msger-send-btn">Send</button>
+          </form>
+        </section>
+        <div class="col-md-3 mt-3">
+          <div class="list-group">
+            <div id="showCountOfConnectedUser" class="list-group">
+              <button type="button" class="list-group-item active"></button>
+            </div>
+            <div id="connected_users" class="list-group">
+              <!-- Connected users will be appended here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
