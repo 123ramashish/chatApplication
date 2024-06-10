@@ -1,0 +1,1 @@
+This project is built using HTML, CSS, JavaScript, Node.js, Express, and MongoDB to enable users to chat with one another. It combines a modern web interface with a robust backend to facilitate real-time communication and data storage.
